@@ -1,9 +1,9 @@
 #!/bin/bash
 # get current dir
-echo -e "Tell me under which user runs your webserver? (Using apache as default): \c "
+echo -e "Tell me under which user runs your webserver? (Using www-data as default): \c "
 read user
 if [ -z $user ]; then
-    user="apache"
+    user="www-data"
 fi
 echo -e "What is the owner username? (Using `whoami` as default): \c "
 read owner
